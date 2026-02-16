@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "HRMS Time Calculator",
+  "version": "1.0",
+  "description": "Calculates when 5 hours and 6 minutes of work will be completed based on time logs.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 24" width="50" height="44">
+	<title>footer-logo-svg</title>
+	<style>
+		.s0 { fill: #ee9c38 } 
+		.s1 { fill: #ffffff } 
+	</style>
+	<path id="Layer" class="s0" d="m2.1 16.9v-16.5h4.7v19h7.8l0.1 4.2h-5.9c-3.7 0-6.7-2.9-6.7-6.6z"/>
+	<path id="Layer" class="s1" d="m25.5 7.1v16.5h-4.7v-19h-10.7v-4.2h8.6 0.1c3.7 0 6.7 2.9 6.7 6.6v0.1z"/>
+</svg>

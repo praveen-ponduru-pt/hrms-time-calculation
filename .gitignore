@@ -1,0 +1,16 @@
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Node modules (if you add build steps later)
+node_modules/
+dist/
+
+# Logs
+npm-debug.log
+yarn-error.log
+
+# Editors
+.vscode/
+.idea/
+*.swp
