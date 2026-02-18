@@ -131,7 +131,8 @@ function calculateEndTime() {
     const timeString = targetTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
     const remainingSecondsTotal = Math.floor(remainingMillis / 1000);
-    const remMins = Math.floor(remainingSecondsTotal / 60);
+    const remHours = Math.floor(remainingSecondsTotal / 3600);
+    const remMins = Math.floor((remainingSecondsTotal % 3600) / 60);
     const remSecs = remainingSecondsTotal % 60;
 
     let messagePrefix = isCurrentlyWorking ? "At this rate:" : "If you start now:";
@@ -139,7 +140,7 @@ function calculateEndTime() {
     return {
         success: true,
         html: `<div style="margin-bottom: 5px;"><strong>Worked:</strong> ${workedHours}h ${workedMins}m ${workedSecs}s</div>
-               <div style="margin-bottom: 5px;"><strong>Remaining:</strong> ${remMins}m ${remSecs}s</div>
+               <div style="margin-bottom: 5px;"><strong>Remaining:</strong> ${remHours}h ${remMins}m ${remSecs}s</div>
                <div><strong>${messagePrefix}</strong> Finish at ${timeString}</div>`
     };
 }
