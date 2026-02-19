@@ -115,6 +115,7 @@ function calculateEndTime() {
     if (remainingMillis <= 0) {
         return {
             success: true,
+            isCurrentlyWorking,
             html: `<strong>Target reached!</strong> You have worked ${workedHours}h ${workedMins}m ${workedSecs}s.`
         };
     }
@@ -139,6 +140,7 @@ function calculateEndTime() {
 
     return {
         success: true,
+        isCurrentlyWorking,
         html: `<div style="margin-bottom: 5px;"><strong>Worked:</strong> ${workedHours}h ${workedMins}m ${workedSecs}s</div>
                <div style="margin-bottom: 5px;"><strong>Remaining:</strong> ${remHours}h ${remMins}m ${remSecs}s</div>
                <div><strong>${messagePrefix}</strong> Finish at ${timeString}</div>`
